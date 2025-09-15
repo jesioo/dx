@@ -1,0 +1,3 @@
+# Public repo ignores
+.DS_Store
+*.cast

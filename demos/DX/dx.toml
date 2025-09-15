@@ -1,0 +1,37 @@
+[[items]]
+name = "README.md"
+description = "Start here"
+file = "README.md"
+
+[[items]]
+name = "Show DX help"
+description = "dx --help (external)"
+cmd = "dx --help || echo 'Install dx with: curl -fsSL https://usedx.sh | sh'"
+external = true
+
+[[items]]
+name = "System info"
+description = "uname -a"
+cmd = "uname -a"
+
+[[items]]
+name = "List files"
+description = "ls -la"
+cmd = "ls -la"
+
+[[items]]
+name = "View MOTD"
+description = "Open demo MOTD"
+file = "MOTD.md"
+
+[[items]]
+name = "Bump build number"
+description = "Increment BUILD and regenerate VERSION.txt"
+cmd = "scripts/increment_build.sh"
+external = true
+
+[[items]]
+name = "Show version"
+description = "Print VERSION.txt and BUILD"
+cmd = "[ -f VERSION.txt ] && cat VERSION.txt || echo no VERSION; [ -f BUILD ] && echo BUILD=$(cat BUILD) || echo no BUILD"
+
